@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.rightColumn .topBtn{
+    color:rgba(0,0,0,0.8);
+    text-decoration: none;
+    border: 0;
+    background-color: transparent;
+    margin: 1em;
+    transition: all 200ms ease-in-out;
+}
+
+.rightColumn .topBtn:hover{
+    color: black;
+}
+
+.toplink{
+    font-weight: 500;
+    transition: all 300ms ease-in-out;
+}
+
+.toplink:hover{
+    border-bottom: solid 1px gray;
+}
+
+.form-select{
+    width: 3.8em;
+    height: 2.2em;
+}
+
+.removebtn{
+    color: rgb(100,100,100);
+    transition: all 300ms ease-in-out;
+}
+
+.removebtn:hover{
+    color: black;
+}
+
+.instagramLogo{
+    background: transparent;
+    transition: color 300ms ease-in-out;
+}
+
+.instagramLogo:hover{
+    color: white;
+    border-radius: 10px;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.facebookLogo{
+    transition: color 300ms ease-in-out;
+}
+
+.facebookLogo:hover{
+    color: #1877f2;
+}
+
+.twitterLogo{
+    transition: color 300ms ease-in-out;
+}
+
+.twitterLogo:hover{
+    color: #00acee;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}

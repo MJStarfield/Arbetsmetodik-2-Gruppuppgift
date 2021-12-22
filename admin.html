@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="text-center mt-5">
+    <a href="index.html">
+      <h1>Art Corner</h1> 
+    </a>
+  </div> 
+  <div class="text-center mt-5 mb-5">
+    <h1> Admin sida</h1>
+    </div> 
+      <hr>
+    <form class="form-inline">
+      <div class="form-group mb-2">
+      </div>
+        <div class="form-group mx-sm-3 mb-2 w-50">
+          <label for="text"  class="sr-only"><h4>Nyhetsbrev</h4></label>
+          <input type="text" class="form-control py-5" id="newsletter" placeholder="">
+        </div>
+        <button type="submit" class="btn btn-primary mb-5 mx-sm-3">Skicka e-mail</button>
+        <button type="submit" class="btn btn-primary mb-5 mx-sm-3">Skicka sms</button>
+    </form>
+    <hr>
+    <div class="container">
+      <h3> Nya ordrar</h3>
+      <table class="table mt-3">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Order nr.</th>
+              <th scope="col">Verk</th>
+              <th scope="col">Kund</th>
+              <th scope="col">E-mail</th>
+              <th scope="col">Status</th>
+             <th scope="col"></th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <th scope="row">12001OR</th>
+            <td>Gråsten</td>
+            <td>Johan Persson</td>
+            <td>jpers@gmail.com</td>
+            <td>Levererad</td>
+            <td><button class="btn btn-primary">Hantera</button></td>
+          </tr>
+          <tr>
+            <th scope="row">12002TR</th>
+            <td>The Whisper</td>
+            <td>Margareta Thörn</td>
+            <td>thörnm@gmail.com</td>
+            <td>Skickad</td>
+            <td><button class="btn btn-primary">Hantera</button></td>
+          </tr>
+          <tr>
+            <th scope="row">12003TR</th>
+            <td>De Stora</td>
+            <td> Hellena Lindberg</td>
+            <td>hellin@gmail.com</td>
+            <td>Skickad</td>
+            <td><button class="btn btn-primary">Hantera</button></td>
+          </tr>
+          <tr>
+            <th scope="row">12003OR</th>
+            <td>Rymd</td>
+            <td>Melina Lindh</td>
+            <td>mlindh@gmail.com</td>
+            <td>Under behandling</td>
+            <td><button class="btn btn-primary">Hantera</button></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div class="container mt-5">
+    <h3> Nya medlemmar</h3>
+    <table class="table mt-3">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Namn</th>
+          <th scope="col">Adress</th>
+          <th scope="col">E-mail</th>
+           <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Andrea Spjut</th>
+          <td>Carl Henningsg.5/ Sthlm</td>
+          <td>spjuta@gmail.com</td>
+          <td><button class="btn btn-primary">Hantera</button></td>
+        </tr>
+        <tr>
+          <th scope="row">Juan Alvarado</th>
+          <td>Stora Gatan 12A / Göteborg</td>
+          <td>juanal@gmail.com</td>
+          <td><button class="btn btn-primary">Hantera</button></td>
+        </tr>
+        <tr>
+          <th scope="row">Maria Johansson</th>
+          <td>Grytavägen 3B / Umeå</td>
+          <td>mariaj@gmail.com</td>
+          <td><button class="btn btn-primary">Hantera</button></td>
+        </tr>
+        <tr>
+          <th scope="row">Cole Smith</th>
+          <td>Violstigen 45 / Trelleborg</td>
+          <td>colesmith@gmail.com</td>
+          <td><button class="btn btn-primary">Hantera</button></td>
+        </tr>
+      </tbody>
+    </table>
+      <td><button class="btn btn-primary mb-3 mt-2">Se alla medlemmar</button></td>
+  </div>
+    <hr>
+  <div class="container mb-5 mt-5 mx-sm-3">
+    <h3>Redigering av bilder och poster.</h3>
+      <button type="submit" class="btn btn-primary mb-5 mt-3 mx-sm-3">Redigera</button>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+</html>

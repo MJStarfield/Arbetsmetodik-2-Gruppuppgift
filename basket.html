@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Art Corner - Kundkorg</title>
+</head>
+<body>
+    <div class="mt-3 text-center">
+        <a href="index.html">
+          <h1>Art Corner</h1> 
+        </a>
+      </div>
+
+      <div class="d-flex">
+        <div class="w-75 m-5 mt-5 pt-5">  
+            <h3>Varukorg</h3>
+            <div class="d-flex justify-content-around align-items-center p-4 border-top border-4">
+                <img src="susanphillips2.jpeg" alt="">
+                <div class="">
+                    <p>Namn:<strong> Ljuset</strong></p>
+                    <p>Konstnär:<strong> Susan Philips</strong></p>
+                </div>
+                <div class="text-center">
+                    <p>Pris</p>
+                    <p id="basketItem1Cost">22000 SEK</p>
+                </div>
+                <div class="text-center">
+                    <p>Antal</p>
+                    <select class="form-select" id="basketItem1Quantity" onchange="changeItemTotal(22000, this.value);" aria-label="Default select example">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div> 
+                <div class="text-center">
+                    <p>Ta bort</p>
+                    <button class="removebtn btn p-0 fs-4" onclick="removeItemFromBasket(this,1);"><i class="bi bi-x-circle-fill"></i></button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around align-items-center p-4 border-top border-4">
+                <img src="Nickalm2.jpeg" alt="">
+                <div class="">
+                    <p>Namn: <strong>The Whisper</strong></p> 
+                    <p>Konstnär: <strong>Nick Alm</strong></p>
+                </div>
+                <div class="text-center">
+                    <p>Pris</p>
+                    <p id="basketItem2Cost">42000 SEK</p>
+                </div>
+                <div class="text-center">
+                    <p>Antal</p>
+                    <select class="form-select" id="basketItem2Quantity" onchange="changeItemTotal(42000, this.value);" aria-label="Default select example">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div> 
+                <div class="text-center">
+                    <p>Ta bort</p>
+                    <button class="removebtn btn p-0 fs-4" onclick="removeItemFromBasket(this,2);"><i class="bi bi-x-circle-fill"></i></button>
+                </div>            
+            </div>
+        </div> 
+        <div class="rightColumn w-25 d-flex flex-column">
+            <div class="row gx-3">
+                <div class="col-auto">
+                    <a href="basket.html">
+                        <button class="topBtn position-relative">
+                            <i class="bi bi-cart mx-1"></i>Kundkorg
+                            <span class="position-absolute top-0 start-1 translate-middle badge rounded-pill bg-dark">
+                                2
+                                <span class="visually-hidden">Varor i kundkorgen</span>
+                            </span>
+                        </button>
+                    </a>
+                    <button class="topBtn mt-4 mx-4" >
+                        Bli medlem
+                    </button>
+                </div>
+                    <div class="">
+                        <label for="inputUserName" class="col-form-label">Username</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" id="inputUserName" class="form-control" aria-describedby="UserNameHelpInline">
+                    </div>
+                    <div class="">
+                        <label for="inputPassword6" class="col-form-label">Password</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn border">Logga In</button>
+                    </div>
+                </div>
+                <div class="search d-flex mt-5" >
+                    <input class="form-control form-control-sm" type="text" placeholder="Search" aria-label=".form-control-sm example">
+                    <div class="col-6">
+                        <button class="btn border" onclick="location.href='product.html';" class="btn" value="sök"><i class="bi bi-search"></i>  Sök</button> 
+                    </div>
+                </div>
+                <div class="contacts w-50 mt-4">
+                    <div class="socialM d-flex" >
+                        <button class="btn fs-1 mx-2"> 
+                            <i class="instagramLogo px-2 bi bi-instagram"></i> 
+                        </button>
+                        <button class="btn fs-1 mx-2">
+                            <i class="facebookLogo px-2 bi bi-facebook"></i>
+                        </button> 
+                        <button class="btn fs-1 mx-2">
+                            <i class="twitterLogo px-2 bi bi-twitter"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="basket mt-5 ">
+                    <hr size="5px">
+                    <p id="sum">Deltotal: 64000 SEK </p>
+                    <p class="fr">Frakt: Välj vid nästa steg</p>
+                    <p>
+                    <a href="info.html">Mer info om frakt</a>
+                    </p>
+                    <hr size="5px">
+                    <p id="total">Total: 64000 SEK</p>
+                    <input type="button" onclick="location.href='checkout.html';" class="btn btn-primary" value="Fortsätt till kassa"></input>
+                </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="js/basket.js"></script>
+</body>
+</html>
