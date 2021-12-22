@@ -38,10 +38,6 @@ function calculateTotalCost(){
     totalCost.innerHTML = currentTotalCost;
 }
 
-function removeItemFromBasket(item){
-    item.parentElement.parentElement.remove();
-}
-
 function changeItemTotal(value, amount){
     if(value == 22000){
         item1TotalValue = value * amount;
